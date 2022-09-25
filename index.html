@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+  <title>FMC Film Club Launch</title>
+
+    <meta charset="UTF-8">
+    <!--<title> Button with Progress Bar | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   </head>
+<body>
+<div class="container">
+<div class="center">
+<img src="https://booking.fmcfilmclub.lk/file/7b811d4ff1bee87a8a6a3cf75415735902732c2dfa18989d18ebeec2188ea59a">
+
+  <div class="button ">
+    <div class="text-icon">
+      <i class="bx bx-cloud-upload"></i>
+      <span class="text">Launch Website</span>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <script>
+    const button = document.querySelector(".button"),
+    text = document.querySelector(".text");
+
+    button.addEventListener("click", ()=>{
+      button.classList.add("progress");
+      text.innerText = "Deploying...";
+
+      setTimeout(()=>{
+       button.classList.remove("progress"); //remove progress after 6s
+       text.innerText = "Deployment Complete";
+window.location.replace("https://fmcfilmclub.lk");
+      },11000); //1000ms = 1s (6000 = 6s)
+    });
+
+  </script>
+
+</body>
+</html>
