@@ -43,7 +43,7 @@ body {
 }
 
 .button.progress::before {
-  animation: progress 10s ease-in-out forwards;
+  animation: progress 16s ease-in-out forwards;
 }
 
 @keyframes progress {
